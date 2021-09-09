@@ -27,7 +27,13 @@ stop: ## Stop and clean
 clean: stop ## Clean plugin
 	docker-compose down -v
 	sudo rm -Rf node_modules vendor .phpunit.result.cache composer.lock
+##
+## Assets
+##---------------------------------------------------------------------------
+.PHONY: encore
 
+encore:
+	docker-compose exec nodejs yarn --cwd tests/Application build
 ##
 ## QA
 ##---------------------------------------------------------------------------
