@@ -1,0 +1,5 @@
+black_sylius_slide_api:
+    resource: |
+        alias: black_sylius_banner.banner
+        path: /api/v2/banners
+    type: sylius.resource_api
