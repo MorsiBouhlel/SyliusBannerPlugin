@@ -32,6 +32,10 @@ black_sylius_banner_shop:
 black_sylius_banner_admin:
     resource: "@BlackSyliusBannerPlugin/config/routes/admin.yaml"
     prefix: '/%sylius_admin.path_name%'
+
+black_sylius_banner_api:
+    resource: "@BlackSyliusBannerPlugin/config/routes/api.yaml"
+    
 ```
 
 4. Register the bundle:
