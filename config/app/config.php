@@ -17,7 +17,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                     'mappings' => [
                         'BlackSyliusBannerPlugin' => [
                             'type' => 'xml',
-                            'dir' => '../config/doctrine'
+                            'dir' => '/config/doctrine'
                         ]
                     ]
                 ]
